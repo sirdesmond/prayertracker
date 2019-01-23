@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { FormInput, Button } from 'react-native-elements';
+import { Input, Button } from 'react-native-elements';
 import { connect } from 'react-redux';
 import { emailChanged, passwordChanged, loginUser } from '../actions';
 import { Spinner } from '../components';
@@ -55,12 +55,12 @@ class SignInScreen extends Component {
             Login or Create Account
           </Text>
 
-          <FormInput
+          <Input
             placeholder='Email'
             onChangeText={this.onEmailChange}
             value={this.props.email}
           />
-          <FormInput
+          <Input
            placeholder='Password'
            onChangeText={this.onPasswordChange}
            value={this.props.password}

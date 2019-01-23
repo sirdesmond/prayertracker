@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-import { FormInput, Button } from 'react-native-elements';
+import { Input, Button } from 'react-native-elements';
 import { connect } from 'react-redux';
 import { emailChanged, passwordChanged, usernameChanged, signupUser } from '../actions';
 import { Spinner } from '../components';
@@ -52,19 +52,19 @@ class SignUpScreen extends Component {
           Create Account
         </Text>
 
-        <FormInput
+        <Input
           placeholder='Email'
           onChangeText={this.onEmailChange}
           value={this.props.email}
         />
-        <FormInput
+        <Input
           placeholder='Password'
           onChangeText={this.onPasswordChange}
           value={this.props.password}
           secureTextEntry
         />
 
-        <FormInput
+        <Input
           placeholder='Username'
           onChangeText={this.onUsernameChange}
           value={this.props.username}

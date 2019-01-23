@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Platform } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 import TabBarIcon from '../components/TabBarIcon';
-import WelcomeScreen from '../screens/welcome';
 import SignInScreen from '../screens/signin';
 import SignUpScreen from '../screens/signup';
 import HomeScreen from '../screens/home';
@@ -10,66 +9,57 @@ import BlazersScreen from '../screens/blazerslist';
 import YearStatsScreen from '../screens/yearstats';
 import MonthStatsScreen from '../screens/monthstats';
 import DetailStatsScreen from '../screens/detailstats';
+import AppLoadingScreen from '../screens/apploading';
 
 
 const AuthStack = createStackNavigator({
+  signin: SignInScreen,
+  signup: SignUpScreen,
   home:  HomeScreen,
-  signIn: SignInScreen,
-  signUp: SignUpScreen
-},{
-    initialRouteName:  'signIn',
-  });
+});
 
-AuthStack.navigationOptions = {
-  tabBarLabel: 'home',
-  tabBarIcon: ({ focused }) => (
-    <TabBarIcon
-      focused={focused}
-      name={
-        Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
-          : 'md-information-circle'
-      }
-    />
-  ),
+AuthStack.navigationOptions = ({ navigation })  => {
+  let { routeName } = navigation.state.routes[navigation.state.index];
+  let navigationOptions = {};
+
+  if(routeName == 'home'){
+    navigationOptions.tabBarLabel = 'home'
+    navigationOptions.tabBarIcon =  ({ focused }) => (
+      <TabBarIcon
+        focused={focused}
+        name={
+          Platform.OS === 'ios'
+            ? 'ios-home'
+            : 'md-home'
+        }
+      />
+    )
+  }
+  else{
+    navigationOptions.tabBarVisible = false
+  }
+  return navigationOptions;
 };
 
-
-
-const StatsStack =  createStackNavigator({
+const AppStack =  createStackNavigator({
+  appLoading: AppLoadingScreen,
   list: BlazersScreen,
   years: YearStatsScreen,
   months: MonthStatsScreen,
   details: DetailStatsScreen
 })
 
-StatsStack.navigationOptions = {
+AppStack.navigationOptions = {
   tabBarLabel: 'list',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'}
+      name={Platform.OS === 'ios' ? 'ios-list' : 'md-list'}
     />
   ),
 };
-
-const WelcomeStack = createStackNavigator({
-  welcome: WelcomeScreen,
-})
-
-WelcomeStack.navigationOptions = {
-  tabBarLabel: 'welcome',
-  tabBarIcon: ({ focused }) => (
-    <TabBarIcon
-      focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-options' : 'md-options'}
-    />
-  ),
-};
-
 
 export default createBottomTabNavigator({
-  AuthStack,
-  StatsStack,
-  WelcomeStack
+  auth: AuthStack,
+  app:AppStack
 })

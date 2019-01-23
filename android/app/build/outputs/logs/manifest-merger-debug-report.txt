@@ -4,30 +4,30 @@ ADDED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManif
 INJECTED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml:1:1-26:12
 INJECTED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml:1:1-26:12
 INJECTED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml:1:1-26:12
-MERGED from [:react-native-gesture-handler] D:\frontend\rxtnative\prayertracker\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-svg] D:\frontend\rxtnative\prayertracker\node_modules\react-native-svg\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-vector-icons] D:\frontend\rxtnative\prayertracker\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-background-timer] D:\frontend\rxtnative\prayertracker\node_modules\react-native-background-timer\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-13:12
-MERGED from [com.facebook.react:react-native:0.57.8] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\react-native-0.57.8.aar\a45a4225e45ca74451c4580771a410d8\AndroidManifest.xml:2:1-15:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\f0b2c0bf33fa9c73b5884f186e3f7214\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\0b4be43b77c6d472737d1acd3708088b\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\74657ce2d948d891aed7d71a272e9a5c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\7aea3b37a8ab4d3a13f912d9610c5fdf\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\312a0699fbca40a7824910816c2b24a6\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\ae32c8337d6f9501ec3cdb1c9d68d87f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\80624604bbac24ddbfd8a353e2fa8496\AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\9b5254ba6de4621c5435f41ed3e88cb8\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\24dbdb463d9d3ec936ab1d7c88eae1f7\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\ec050752e58ee4acc614351295007880\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\e7d2c0f9a52bce171c76f5337e33de43\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\5547dfbe7b09070eec30fa83b11ef084\AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\76db8a97ee44b8d4c74e77bae322bd2c\AndroidManifest.xml:2:1-13:12
-MERGED from [org.webkit:android-jsc:r174650] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\ece0fbf329743a56bcd6b4642bc2e495\AndroidManifest.xml:1:1-3:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3589c488fbfba435abd9221b84a8985f\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\5b3a508f843e5707bab865b46d202447\AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\e394510c7817dd55daf723df93201843\AndroidManifest.xml:2:1-9:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a07559584c23fecdba3e357348dbb1ae\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0f90429b07c17dc05a77b6d4f0e449a9\AndroidManifest.xml:17:1-22:12
+MERGED from [:react-native-gesture-handler] D:\frontend\rxtnative\prayertracker\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-svg] D:\frontend\rxtnative\prayertracker\node_modules\react-native-svg\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-vector-icons] D:\frontend\rxtnative\prayertracker\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-background-timer] D:\frontend\rxtnative\prayertracker\node_modules\react-native-background-timer\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.react:react-native:0.57.8] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\react-native-0.57.8.aar\60bc4940819ff51aaa61ea6f1f4ed56a\AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\af9904142f512756aaa7b2074f77437f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d8d39ef28cdfbfefab34dbbf93bf9ae2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\cca5af17de555ae11c2223693bcbdb68\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\5a36ed62a690ca22cff6496d848fe3cd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\e35be760155e0d0ec3a9273d630105f9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\11fa006d06a7c106bd77f769ea8213c3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\7d57d05acafcaa4ca973d6639b4a44c3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\025a3bd03a54a76ffea5e9ffaf2555bc\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\50aafb4e464d86f420cd10a2085e655f\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\72c4b0fa5a9745ef3c0e1e43ad2efffc\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\5b5479b9a3e01370f0d043921e73b25b\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\74c4fcc2cfae6091c62fdca0554e3d65\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\7f4f498dc9cbe28481c9a14484896312\AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\bebd55bd18de94c2622d49bc76f00d3e\AndroidManifest.xml:1:1-3:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\bc60e3e488096871cd1c1d92d4d38b04\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\3c9756d1b8fa1552c97c569b100484aa\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\2805cc227871c5a2a256f0ee546f76a8\AndroidManifest.xml:2:1-9:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fc416af6da9f4aeceef3f8897532b75c\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e23b085e1b9f6fa07fc269be86838963\AndroidManifest.xml:17:1-22:12
 INJECTED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml:1:1-26:12
 INJECTED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml:1:1-26:12
 INJECTED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml:1:1-26:12
@@ -51,18 +51,18 @@ ADDED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManif
 		ADDED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml:4:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml:5:5-77
-MERGED from [com.facebook.react:react-native:0.57.8] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\react-native-0.57.8.aar\a45a4225e45ca74451c4580771a410d8\AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.57.8] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\react-native-0.57.8.aar\a45a4225e45ca74451c4580771a410d8\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.57.8] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\react-native-0.57.8.aar\60bc4940819ff51aaa61ea6f1f4ed56a\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.57.8] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\react-native-0.57.8.aar\60bc4940819ff51aaa61ea6f1f4ed56a\AndroidManifest.xml:11:5-78
 	android:name
 		ADDED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml:5:22-75
 application
 ADDED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml:7:5-24:19
-MERGED from [com.facebook.react:react-native:0.57.8] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\react-native-0.57.8.aar\a45a4225e45ca74451c4580771a410d8\AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.57.8] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\react-native-0.57.8.aar\a45a4225e45ca74451c4580771a410d8\AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\76db8a97ee44b8d4c74e77bae322bd2c\AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\76db8a97ee44b8d4c74e77bae322bd2c\AndroidManifest.xml:11:5-20
-MERGED from [org.webkit:android-jsc:r174650] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\ece0fbf329743a56bcd6b4642bc2e495\AndroidManifest.xml:2:3-17
-MERGED from [org.webkit:android-jsc:r174650] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\ece0fbf329743a56bcd6b4642bc2e495\AndroidManifest.xml:2:3-17
+MERGED from [com.facebook.react:react-native:0.57.8] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\react-native-0.57.8.aar\60bc4940819ff51aaa61ea6f1f4ed56a\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.57.8] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\react-native-0.57.8.aar\60bc4940819ff51aaa61ea6f1f4ed56a\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\7f4f498dc9cbe28481c9a14484896312\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\7f4f498dc9cbe28481c9a14484896312\AndroidManifest.xml:11:5-20
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\bebd55bd18de94c2622d49bc76f00d3e\AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\bebd55bd18de94c2622d49bc76f00d3e\AndroidManifest.xml:2:3-17
 	android:label
 		ADDED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml:9:7-39
 	android:icon
@@ -101,52 +101,52 @@ uses-sdk
 INJECTED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml
 INJECTED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml
-MERGED from [:react-native-gesture-handler] D:\frontend\rxtnative\prayertracker\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] D:\frontend\rxtnative\prayertracker\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-svg] D:\frontend\rxtnative\prayertracker\node_modules\react-native-svg\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-svg] D:\frontend\rxtnative\prayertracker\node_modules\react-native-svg\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] D:\frontend\rxtnative\prayertracker\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] D:\frontend\rxtnative\prayertracker\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-background-timer] D:\frontend\rxtnative\prayertracker\node_modules\react-native-background-timer\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-background-timer] D:\frontend\rxtnative\prayertracker\node_modules\react-native-background-timer\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.57.8] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\react-native-0.57.8.aar\a45a4225e45ca74451c4580771a410d8\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.57.8] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\react-native-0.57.8.aar\a45a4225e45ca74451c4580771a410d8\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\f0b2c0bf33fa9c73b5884f186e3f7214\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\f0b2c0bf33fa9c73b5884f186e3f7214\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\0b4be43b77c6d472737d1acd3708088b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\0b4be43b77c6d472737d1acd3708088b\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\74657ce2d948d891aed7d71a272e9a5c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\74657ce2d948d891aed7d71a272e9a5c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\7aea3b37a8ab4d3a13f912d9610c5fdf\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\7aea3b37a8ab4d3a13f912d9610c5fdf\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\312a0699fbca40a7824910816c2b24a6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\312a0699fbca40a7824910816c2b24a6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\ae32c8337d6f9501ec3cdb1c9d68d87f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\ae32c8337d6f9501ec3cdb1c9d68d87f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\80624604bbac24ddbfd8a353e2fa8496\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\80624604bbac24ddbfd8a353e2fa8496\AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\9b5254ba6de4621c5435f41ed3e88cb8\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\9b5254ba6de4621c5435f41ed3e88cb8\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\24dbdb463d9d3ec936ab1d7c88eae1f7\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\24dbdb463d9d3ec936ab1d7c88eae1f7\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\ec050752e58ee4acc614351295007880\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\ec050752e58ee4acc614351295007880\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\e7d2c0f9a52bce171c76f5337e33de43\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\e7d2c0f9a52bce171c76f5337e33de43\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\5547dfbe7b09070eec30fa83b11ef084\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\5547dfbe7b09070eec30fa83b11ef084\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\76db8a97ee44b8d4c74e77bae322bd2c\AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\76db8a97ee44b8d4c74e77bae322bd2c\AndroidManifest.xml:7:5-9:41
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3589c488fbfba435abd9221b84a8985f\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\3589c488fbfba435abd9221b84a8985f\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\5b3a508f843e5707bab865b46d202447\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\5b3a508f843e5707bab865b46d202447\AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\e394510c7817dd55daf723df93201843\AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\e394510c7817dd55daf723df93201843\AndroidManifest.xml:5:5-7:41
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a07559584c23fecdba3e357348dbb1ae\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a07559584c23fecdba3e357348dbb1ae\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0f90429b07c17dc05a77b6d4f0e449a9\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\0f90429b07c17dc05a77b6d4f0e449a9\AndroidManifest.xml:20:5-44
+MERGED from [:react-native-gesture-handler] D:\frontend\rxtnative\prayertracker\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] D:\frontend\rxtnative\prayertracker\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] D:\frontend\rxtnative\prayertracker\node_modules\react-native-svg\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] D:\frontend\rxtnative\prayertracker\node_modules\react-native-svg\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] D:\frontend\rxtnative\prayertracker\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] D:\frontend\rxtnative\prayertracker\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-background-timer] D:\frontend\rxtnative\prayertracker\node_modules\react-native-background-timer\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-background-timer] D:\frontend\rxtnative\prayertracker\node_modules\react-native-background-timer\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.8] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\react-native-0.57.8.aar\60bc4940819ff51aaa61ea6f1f4ed56a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.57.8] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\react-native-0.57.8.aar\60bc4940819ff51aaa61ea6f1f4ed56a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\af9904142f512756aaa7b2074f77437f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\af9904142f512756aaa7b2074f77437f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d8d39ef28cdfbfefab34dbbf93bf9ae2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d8d39ef28cdfbfefab34dbbf93bf9ae2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\cca5af17de555ae11c2223693bcbdb68\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\cca5af17de555ae11c2223693bcbdb68\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\5a36ed62a690ca22cff6496d848fe3cd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\5a36ed62a690ca22cff6496d848fe3cd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\e35be760155e0d0ec3a9273d630105f9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\e35be760155e0d0ec3a9273d630105f9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\11fa006d06a7c106bd77f769ea8213c3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\11fa006d06a7c106bd77f769ea8213c3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\7d57d05acafcaa4ca973d6639b4a44c3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\7d57d05acafcaa4ca973d6639b4a44c3\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\025a3bd03a54a76ffea5e9ffaf2555bc\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\fresco-1.10.0.aar\025a3bd03a54a76ffea5e9ffaf2555bc\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\50aafb4e464d86f420cd10a2085e655f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\50aafb4e464d86f420cd10a2085e655f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\72c4b0fa5a9745ef3c0e1e43ad2efffc\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\drawee-1.10.0.aar\72c4b0fa5a9745ef3c0e1e43ad2efffc\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\5b5479b9a3e01370f0d043921e73b25b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.10.0.aar\5b5479b9a3e01370f0d043921e73b25b\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\74c4fcc2cfae6091c62fdca0554e3d65\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.10.0.aar\74c4fcc2cfae6091c62fdca0554e3d65\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\7f4f498dc9cbe28481c9a14484896312\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.5.1] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\soloader-0.5.1.aar\7f4f498dc9cbe28481c9a14484896312\AndroidManifest.xml:7:5-9:41
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\bc60e3e488096871cd1c1d92d4d38b04\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\bc60e3e488096871cd1c1d92d4d38b04\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\3c9756d1b8fa1552c97c569b100484aa\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\3c9756d1b8fa1552c97c569b100484aa\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\2805cc227871c5a2a256f0ee546f76a8\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\fbcore-1.10.0.aar\2805cc227871c5a2a256f0ee546f76a8\AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fc416af6da9f4aeceef3f8897532b75c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fc416af6da9f4aeceef3f8897532b75c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e23b085e1b9f6fa07fc269be86838963\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Desmond\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\e23b085e1b9f6fa07fc269be86838963\AndroidManifest.xml:20:5-44
 INJECTED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml
 INJECTED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -158,9 +158,9 @@ INJECTED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidMa
 		ADDED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [:react-native-background-timer] D:\frontend\rxtnative\prayertracker\node_modules\react-native-background-timer\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:5-68
+ADDED from [:react-native-background-timer] D:\frontend\rxtnative\prayertracker\node_modules\react-native-background-timer\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-68
 	android:name
-		ADDED from [:react-native-background-timer] D:\frontend\rxtnative\prayertracker\node_modules\react-native-background-timer\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:22-65
+		ADDED from [:react-native-background-timer] D:\frontend\rxtnative\prayertracker\node_modules\react-native-background-timer\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-65
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 IMPLIED from D:\frontend\rxtnative\prayertracker\android\app\src\main\AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 uses-permission#android.permission.READ_PHONE_STATE

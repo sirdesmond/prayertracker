@@ -35,9 +35,11 @@ class YearStatsScreen extends Component {
   }
 
   createDataSource({ userData }) {
-  this.setState({ dataSource: _.filter(Object.keys(userData), (key) => {
-      return key !== "username" && key !== "role"
-    }) })
+    if(userData){
+      this.setState({ dataSource: _.filter(Object.keys(userData), (key) => {
+          return key !== "username" && key !== "role"
+        }) })
+    }
   }
 
   onNavigate = () => {
@@ -59,17 +61,19 @@ class YearStatsScreen extends Component {
   }
 
   render() {
+    console.log("in here 1...")
     if (this.state.currentUser !== null) {
       return (
-        <List>
+        <View>
           <FlatList
             data={this.state.dataSource}
             renderItem={this.renderItem}
             keyExtractor={(item,index) =>  `list-${item}-${index}`}
           />
-        </List>
+        </View>
       );
     } else {
+      console.log("in here...")
       return (<View />)
     }
   }

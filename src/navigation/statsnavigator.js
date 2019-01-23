@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StackNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation';
 import { connect } from 'react-redux';
 import BlazersScreen from '../screens/blazerslist';
 import YearStatsScreen from '../screens/yearstats';
@@ -10,7 +10,7 @@ import DetailStatsScreen from '../screens/detailstats';
 class StatsNavigator extends Component {
 
   render(){
-    const StatsNavigator =  StackNavigator({
+    const StatsNavigator =  createStackNavigator({
       list: { screen: BlazersScreen },
       years: { screen: YearStatsScreen },
       months: { screen: MonthStatsScreen },

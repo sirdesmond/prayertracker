@@ -3,8 +3,9 @@ import * as types from './types';
 import _ from 'lodash';
 
 export const updateUserData = (userData) => {
-    const { currentUser } = firebase.auth();
-    userData = { ...userData, role: (userData.role === null ) ? 'user': userData.role, username: currentUser.displayName }
+    const { currentUser } =  firebase.auth();
+    userData = { ...userData, role: (userData.role === null || userData.role === undefined ) ? 'user': userData.role, username: currentUser.displayName }
+
     return (dispatch) => {
         firebase.database().ref(`/users/${currentUser.uid}/`)
             .set(userData)

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, FlatList, View } from 'react-native';
-import { List, Button } from 'react-native-elements';
+import { List } from 'react-native-elements';
 import { connect } from 'react-redux';
 import { fetchAllUserData } from '../actions';
 import ListItem from '../components/listitem';
@@ -48,13 +48,13 @@ class BlazersScreen extends Component {
 
   render() {
     return (
-      <List>
+      <View>
         <FlatList
           data={this.state.dataSource}
           renderItem={this.renderItem}
           keyExtractor={ (item,index) =>  `list-${item}-${index}`}
         />
-      </List>
+      </View>
     );
   }
 }

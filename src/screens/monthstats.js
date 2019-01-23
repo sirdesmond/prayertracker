@@ -53,13 +53,13 @@ class MonthStatsScreen extends Component {
 
   render() {
     return (
-      <List>
+      <View>
         <FlatList
           data={this.state.dataSource}
           renderItem={this.renderItem}
           keyExtractor={(item,index) =>  `list-${item}-${index}`}
         />
-      </List>
+      </View>
     );
   }
 }

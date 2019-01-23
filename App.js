@@ -1,17 +1,12 @@
 import React from 'react';
 import { Platform, StatusBar, StyleSheet, View, AsyncStorage } from 'react-native';
 import { Provider } from 'react-redux';
-import firebase from '@firebase/app'
-import '@firebase/auth'
+import firebase from 'firebase'
 import offline from 'react-native-simple-store'
 import AppNavigator from './src/navigation/AppNavigator';
 import configureStore from './src/store/configureStore';
 import config from './src/config'
-
-// console.ignoredYellowBox = [
-//   'Setting a timer'
-// ]
-
+import './src/utilities/yellowBoxFix'
 //show welcome screen only on users first time.
 //show login if it's users first time.
 //store valid logged in token on user device
@@ -44,36 +39,19 @@ export default class App extends React.Component {
     })
   }
 
-  async showWelcome() {
-    try {
-      const show = await AsyncStorage.getItem('@TB:showWelcome')
-      if (show === null) {
-        AsyncStorage.setItem('@TB:showWelcome', 'true')
-      }
-      return show
-    } catch (error) {
-    }
-  }
-
 
   render() {
     const store = configureStore()
-    let show = null
-
-
-    this.showWelcome()
-      .then(show => show = show)
-      // .catch(error => console.log(error))
 
     offline.get('@TB:currentUser')
-    .then(user => currentUser = user )
+    .then(user => currentUser = user)
 
     return (
       <View style={styles.container}>
         {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
         {Platform.OS === 'android' && <View style={styles.statusBarUnderlay} />}
         <Provider store={store}>
-          <AppNavigator showWelcome={show} currentUser={currentUser} />
+          <AppNavigator currentUser={currentUser}/>
         </Provider>
       </View>
     );

@@ -176,7 +176,7 @@ document.getElementById(id).style.display = 'none';
       <span class="mdl-layout-title">Lint Report: 4 warnings</span>
       <div class="mdl-layout-spacer"></div>
       <nav class="mdl-navigation mdl-layout--large-screen-only">
-Check performed at Sun Jan 20 22:55:56 CST 2019      </nav>
+Check performed at Tue Jan 22 21:27:21 CST 2019      </nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
@@ -217,7 +217,7 @@ Check performed at Sun Jan 20 22:55:56 CST 2019      </nav>
 <tr>
 <td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#GoogleAppIndexingWarning">GoogleAppIndexingWarning</a>: Missing support for Firebase App Indexing</td></tr>
-<tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (29)</a>
+<tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (31)</a>
 </td></tr></table>
 <br/>              </div>
               <div class="mdl-card__actions mdl-card--border">
@@ -235,13 +235,13 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../build.gradle">../../build.gradle</a>:147</span>: <span class="message">A newer version of com.android.support:appcompat-v7 than 27.1.1 is available: 28.0.0</span><br /><pre class="errorlines">
-<span class="lineno"> 144 </span>    implementation project(<span class="string">':react-native-vector-icons'</span>)
-<span class="lineno"> 145 </span>    implementation project(<span class="string">':react-native-background-timer'</span>)
-<span class="lineno"> 146 </span>    implementation fileTree(dir: <span class="string">"libs"</span>, include: [<span class="string">"*.jar"</span>])
-<span class="caretline"><span class="lineno"> 147 </span>    <span class="warning">implementation <span class="string">"com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 148 </span>    implementation <span class="string">"com.facebook.react:react-native:+"</span>  <span class="comment">// From node_modules</span>
-<span class="lineno"> 149 </span>}
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:145</span>: <span class="message">A newer version of com.android.support:appcompat-v7 than 27.1.1 is available: 28.0.0</span><br /><pre class="errorlines">
+<span class="lineno"> 142 </span>    implementation project(<span class="string">':react-native-vector-icons'</span>)
+<span class="lineno"> 143 </span>    implementation project(<span class="string">':react-native-background-timer'</span>)
+<span class="lineno"> 144 </span>    implementation fileTree(dir: <span class="string">"libs"</span>, include: [<span class="string">"*.jar"</span>])
+<span class="caretline"><span class="lineno"> 145 </span>    <span class="warning">implementation <span class="string">"com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 146 </span>    implementation <span class="string">"com.facebook.react:react-native:+"</span>  <span class="comment">// From node_modules</span>
+<span class="lineno"> 147 </span>}
 </pre>
 
 </div>
@@ -280,14 +280,14 @@ Dismiss</button>            </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../build.gradle">../../build.gradle</a>:148</span>: <span class="message">Avoid using + in version numbers; can lead to unpredictable and unrepeatable builds (com.facebook.react:react-native:+)</span><br /><pre class="errorlines">
-<span class="lineno"> 145 </span>    implementation project(<span class="string">':react-native-background-timer'</span>)
-<span class="lineno"> 146 </span>    implementation fileTree(dir: <span class="string">"libs"</span>, include: [<span class="string">"*.jar"</span>])
-<span class="lineno"> 147 </span>    implementation <span class="string">"com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"</span>
-<span class="caretline"><span class="lineno"> 148 </span>    <span class="warning">implementation <span class="string">"com.facebook.react:react-native:+"</span>  <span class="comment">// From node_modules</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 149 </span>}
-<span class="lineno"> 150 </span>
-<span class="lineno"> 151 </span><span class="comment">// Run this once to be able to run the application with BUCK</span></pre>
+<span class="location"><a href="../../build.gradle">../../build.gradle</a>:146</span>: <span class="message">Avoid using + in version numbers; can lead to unpredictable and unrepeatable builds (com.facebook.react:react-native:+)</span><br /><pre class="errorlines">
+<span class="lineno"> 143 </span>    implementation project(<span class="string">':react-native-background-timer'</span>)
+<span class="lineno"> 144 </span>    implementation fileTree(dir: <span class="string">"libs"</span>, include: [<span class="string">"*.jar"</span>])
+<span class="lineno"> 145 </span>    implementation <span class="string">"com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"</span>
+<span class="caretline"><span class="lineno"> 146 </span>    <span class="warning">implementation <span class="string">"com.facebook.react:react-native:+"</span>  <span class="comment">// From node_modules</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="lineno"> 147 </span>}
+<span class="lineno"> 148 </span>
+<span class="lineno"> 149 </span><span class="comment">// Run this once to be able to run the application with BUCK</span></pre>
 
 </div>
 <div class="metadata"><div class="explanation" id="explanationGradleDynamicVersion" style="display: none;">
@@ -478,6 +478,33 @@ The WebP format is typically more compact than PNG and JPEG. As of Android 4.2.1
 <br/>
 Launcher icons must be in the PNG format.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
 To suppress this error, use the issue id "ConvertToWebp" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">DalvikOverride<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+The Dalvik virtual machine will treat a package private method in one class as overriding a package private method in its super class, even if they are in separate packages.<br/>
+<br/>
+If you really did intend for this method to override the other, make the method <code>protected</code> instead.<br/>
+<br/>
+If you did <b>not</b> intend the override, consider making the method private, or changing its name or signature.<br/>
+<br/>
+Note that this check is disabled be default, because ART (the successor to Dalvik) no longer has this behavior.<br/>To suppress this error, use the issue id "DalvikOverride" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<br/></div>
+</div>
+</div>
+<div class="issue">
+<div class="id">DuplicateStrings<div class="issueSeparator"></div>
+</div>
+<div class="metadata">Disabled By: Default<br/>
+<div class="explanation">
+Duplicate strings can make applications larger unnecessarily.<br/>
+<br/>
+This lint check looks for duplicate strings, including differences for strings where the only difference is in capitalization. Title casing and all uppercase can all be adjusted in the layout or in code.<br/><div class="moreinfo">More info: <a href="https://developer.android.com/reference/android/widget/TextView.html#attr_android:inputType">https://developer.android.com/reference/android/widget/TextView.html#attr_android:inputType</a>
+</div>To suppress this error, use the issue id "DuplicateStrings" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
 <br/></div>
 </div>
 </div>
@@ -711,7 +738,12 @@ To suppress this error, use the issue id "TypographyQuotes" as explained in the 
 <div class="metadata">Disabled By: Default<br/>
 <div class="explanation">
 To improve referencing this code from Kotlin, consider adding<br/>
-explicit nullness information here with either <code>@NonNull</code> or <code>@Nullable</code>.<br/><div class="moreinfo">More info: <a href="https://android.github.io/kotlin-guides/interop.html#nullability-annotations">https://android.github.io/kotlin-guides/interop.html#nullability-annotations</a>
+explicit nullness information here with either <code>@NonNull</code> or <code>@Nullable</code>.<br/>
+<br/>
+You can set the environment variable<br/>
+    <code>ANDROID_LINT_NULLNESS_IGNORE_DEPRECATED=true</code><br/>
+if you want lint to ignore classes and members that have been annotated with<br/>
+<code>@Deprecated</code>.<br/><div class="moreinfo">More info: <a href="https://android.github.io/kotlin-guides/interop.html#nullability-annotations">https://android.github.io/kotlin-guides/interop.html#nullability-annotations</a>
 </div>To suppress this error, use the issue id "UnknownNullness" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
 <br/></div>
 </div>

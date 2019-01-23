@@ -1,3 +1,2 @@
-# issues: 
-- welcome screen does not show
-- how to login once
+# PrayerTracker
+An app for small groups to encourage team members to pray

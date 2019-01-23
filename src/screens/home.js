@@ -74,14 +74,13 @@ class HomeScreen extends Component {
     }
   }
   onButtonPress = () => {
-    let intervalId = null;
     if (!this.state.praying) {
       this.setState({ ...this.state, praying: !this.state.praying });
-      intervalId = BackgroundTimer.setInterval(() => {
-        // console.log('toc');
+      BackgroundTimer.runBackgroundTimer(() => {
+        this.updateTimer();
       }, 1000);
     } else {
-      BackgroundTimer.clearInterval(intervalId)
+      BackgroundTimer.stopBackgroundTimer();
       //TODO:offline storage
       this.saveUserDataToFirebase();
       this.setState({ ...this.state, praying: !this.state.praying });

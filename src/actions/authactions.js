@@ -31,7 +31,6 @@ export const loginUser = ({ email, password, navigate }) => {
 };
 
 const _loginUserSuccess = async (dispatch, navigate, user) => {
-
   await dispatch({
     type: types.LOGIN_USER_SUCCESS,
     payload: {user,navigate}
@@ -47,7 +46,8 @@ export const signupUser = ({ email, password, username, navigate }) => {
   return (dispatch) => {
     dispatch({ type: types.SIGNUP_USER });
     firebase.auth().createUserWithEmailAndPassword(email, password)
-      .then( user => {
+      .then( ({user}) => {
+        console.log("user: ", user)
         user.updateProfile({ displayName: username })
         _signupUserSuccess(dispatch, user, navigate)
       })
