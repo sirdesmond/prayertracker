@@ -10,12 +10,16 @@ class Slides extends Component {
     if (index === this.props.data.length - 1) {
       return (
         <Button
-          title='Onwards!'
+          title='CLICK ME'
           buttonStyle={styles.buttonStyle}
           onPress={this.props.onComplete}
           raised
         />
       );
+    }else {
+      return (
+        <Text style={{fontSize: 12, marginTop: 20}}> SLIDE LEFT </Text>
+      )
     }
   }
 
@@ -59,8 +63,7 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   buttonStyle: {
-    backgroundColor: '#0288D1',
-    marginTop: 15
+    backgroundColor: '#0288D1'
   }
 });
 

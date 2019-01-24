@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, NetInfo, Keyboard } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, BackHandler, Keyboard } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import _ from 'lodash';
 import { connect } from 'react-redux';
 import firebase from '@firebase/app'
 import '@firebase/auth'
 import BackgroundTimer from 'react-native-background-timer';
-import { NavigationActions } from 'react-navigation';
 import { updateUserData, fetchUserData } from '../actions';
 
 const moment = require('moment');
@@ -17,17 +16,17 @@ const months = ["January", "February", "March", "April", "May", "June",
 ];
 
 class HomeScreen extends Component {
-    static navigationOptions = ({navigation}) => ({
-      header: null,
-      tabBarLabel: 'Home',
-      tabBarIcon: ({ tintColor }) => (
-       <Icon
-       name='ios-home-outline'
-       size={30}
-       color='#01addf'
-       />
+  static navigationOptions = ({ navigation }) => ({
+    header: null,
+    tabBarLabel: 'Home',
+    tabBarIcon: ({ tintColor }) => (
+      <Icon
+        name='ios-home-outline'
+        size={30}
+        color='#01addf'
+      />
     ),
-    });
+  });
 
   constructor(props) {
     super(props);
@@ -40,7 +39,7 @@ class HomeScreen extends Component {
       monthData: {},
       yearData: {},
       userData: {},
-      week: `week${parseInt(moment().monthWeek())+1}`,
+      week: `week${parseInt(moment().monthWeek()) + 1}`,
       month: String(months[moment().month()]) || '',
       year: String(moment().year()) || '',
       timeprayed: 0,
@@ -50,11 +49,19 @@ class HomeScreen extends Component {
 
 
 
-   componentWillMount(){
+  componentWillMount() {
     const { currentUser } = firebase.auth();
-    if (currentUser !== null ){
+    if (currentUser !== null) {
       this.props.fetchUserData()
     }
+  }
+
+  componentDidMount() {
+    BackHandler.addEventListener('backPress', this.onBackButtonPressed);
+  }
+
+  componentWillUnmount() {
+    BackHandler.removeEventListener('backPress', this.onBackButtonPressed);
   }
 
 
@@ -62,12 +69,17 @@ class HomeScreen extends Component {
     this.initialSetup(nextProps)
   }
 
-  initialSetup({ userData }){
+  onBackButtonPressed() {
+    return true;
+  }
+
+  initialSetup({ userData }) {
+    console.log(`userData: ${userData}`)
     this.state.userData = userData
     this.state.yearData = this.state.userData[this.state.year] || {}
     this.state.monthData = this.state.yearData[this.state.month] || {}
 
-    if(this.state.initialTimeSet == false){
+    if (this.state.initialTimeSet == false) {
       this.state.timeprayed = parseInt(this.state.monthData[this.state.week]) || 0
       // console.log(`time prayed: ${this.state.timeprayed}`)
       this.state.initialTimeSet = true
@@ -173,7 +185,7 @@ const mapStateToProps = (state) => {
   return { userData };
 };
 
-export default connect(mapStateToProps,{ updateUserData, fetchUserData })(HomeScreen);
+export default connect(mapStateToProps, { updateUserData, fetchUserData })(HomeScreen);
 
 const styles = StyleSheet.create({
   containerStyle: {

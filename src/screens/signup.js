@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { Input, Button } from 'react-native-elements';
 import { connect } from 'react-redux';
 import { emailChanged, passwordChanged, usernameChanged, signupUser } from '../actions';
@@ -35,20 +35,21 @@ class SignUpScreen extends Component {
       return <Spinner size="large" />;
     }
     return (
-      <Button
-        title='Sign Up'
-        backgroundColor='rgba(0,0,0,0)'
-        color='rgba(122,122,122,1)'
-        large
-        onPress={this.onSignUpPress}
-      />
+      <View style={styles.buttonContainer}>
+        <Button
+          title='Sign Up'
+          buttonStyle={styles.buttonStyle}
+          large
+          onPress={this.onSignUpPress}
+        />
+      </View>
     );
   }
 
   render() {
     return (
       <View>
-        <Text style={{ textAlign: 'center' }}>
+        <Text style={{ fontSize: 30, textAlign: 'center' }}>
           Create Account
         </Text>
 
@@ -76,6 +77,21 @@ class SignUpScreen extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  buttonContainer: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+
+  buttonStyle: {
+    marginTop: 20,
+    padding: 10,
+    backgroundColor: '#01addf',
+    height: 45
+    }
+});
 
 const mapStateToProps = ({ auth }) => {
   const { email, password, username, loading, error, user } = auth;

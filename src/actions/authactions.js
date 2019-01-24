@@ -24,7 +24,7 @@ export const loginUser = ({ email, password, navigate }) => {
       .then(user => _loginUserSuccess(dispatch, navigate, user))
       .catch((err) => {
         //something is wrong here..
-        // console.log(`error here...${err}`);
+        console.log(`error here...${err}`);
         _loginUserFail(dispatch);
     });
   };

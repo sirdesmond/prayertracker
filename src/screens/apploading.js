@@ -24,8 +24,8 @@ export default class AppLoadingScreen extends React.Component {
       .then( _ => {
         firebase.database().ref(`/users/${currentUser.uid}/`)
           .on('value', snapshot => {
-            const role = snapshot.val().role;
-            const initialRouteName = (role == 'admin') ? 'list' : 'years'
+            const val = snapshot.val();
+            const initialRouteName = (val && val.role == 'admin') ? 'list' : 'years'
             this.props.navigation.replace(initialRouteName)
           })
       })

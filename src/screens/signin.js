@@ -33,19 +33,19 @@ class SignInScreen extends Component {
   }
 
   renderButton() {
-  if (this.props.loading) {
-    return <Spinner size="large" />;
+    if (this.props.loading) {
+      return <Spinner size="large" />;
+    }
+    return (
+      <View style={styles.buttonContainer}>
+        <Button
+          title='SIGN IN'
+          buttonStyle={styles.buttonStyle}
+          onPress={this.onSignInPress}
+        />
+      </View>
+    );
   }
-  return (
-    <Button
-      title='Sign In'
-      backgroundColor='rgba(0,0,0,0)'
-      color='rgba(122,122,122,1)'
-      large
-      onPress={this.onSignInPress}
-    />
-  );
-}
 
   render() {
     return (
@@ -61,26 +61,27 @@ class SignInScreen extends Component {
             value={this.props.email}
           />
           <Input
-           placeholder='Password'
-           onChangeText={this.onPasswordChange}
-           value={this.props.password}
-           secureTextEntry
+            placeholder='Password'
+            onChangeText={this.onPasswordChange}
+            value={this.props.password}
+            secureTextEntry
           />
 
           {this.renderButton()}
-       </View>
+        </View>
 
-       <View style={styles.signupContainerStyle}>
-        <Text style={styles.titleStyle}>Dont have an account?</Text>
-        <Button
-          title='Sign Up'
-          backgroundColor='rgba(0,0,0,0)'
-          color='rgba(122,122,122,1)'
-          large
-          onPress={this.onSignUpPress}
-        />
-       </View>
-    </View>
+        <View style={styles.signupContainerStyle}>
+          <Text style={styles.titleStyle}>Dont have an account?</Text>
+          <View style={styles.buttonContainer}>
+            <Button
+              title='SIGN UP'
+              buttonStyle={styles.buttonStyle}
+              onPress={this.onSignUpPress}
+            />
+
+          </View>
+        </View>
+      </View>
     );
   }
 }
@@ -93,12 +94,26 @@ const styles = StyleSheet.create({
   },
   titleStyle: {
     textAlign: 'center',
-    fontSize: 20
+    fontSize: 20,
+    color: '#01addf'
   },
   signupContainerStyle: {
     marginTop: 'auto',
-    marginBottom: 180
-  }
+    marginBottom: 220
+  },
+
+  buttonContainer: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+
+  buttonStyle: {
+    marginTop: 20,
+    padding: 10,
+    backgroundColor: '#01addf',
+    height: 45
+    }
 });
 
 const mapStateToProps = ({ auth }) => {

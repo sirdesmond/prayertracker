@@ -20,27 +20,28 @@ export default class AuthLoadingScreen extends React.Component {
   // Fetch the token from storage then navigate to our appropriate place
   _bootstrapAsync = async () => {
     const show = await AsyncStorage.getItem('@TB:showWelcome');
-    let currentUser; 
+    let currentUser;
 
     offline.get("@TB:currentUser")
-    .then(user => currentUser = user)
-    .then(something => {
-       if (show === null) {
-      AsyncStorage.setItem('@TB:showWelcome', 'true')
-      this.props.navigation.navigate('welcome');
-      }
-    else{
-      firebase.database().ref(`/users/${currentUser.uid}/`)
-      .on('value', _ => {
-        if(currentUser == null ){
-          this.props.navigation.navigate('signin');
-        }else {
-          this.props.navigation.navigate('home');
+      .then(user => currentUser = user)
+      .then(something => {
+        if (show === null) {
+          AsyncStorage.setItem('@TB:showWelcome', 'true')
+          this.props.navigation.navigate('welcome');
+        }
+        else {
+          firebase.database().ref(`/users/${currentUser.uid}/`)
+            .on('value', _ => {
+              if (currentUser == null) {
+                this.props.navigation.navigate('signin');
+              } else {
+                this.props.navigation.navigate('home');
+              }
+            })
         }
       })
-    }
-  })
-};
+      .catch( _ => this.props.navigation.navigate('signin'))
+  };
 
   // Render any loading content that you like here
   render() {
