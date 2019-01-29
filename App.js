@@ -20,7 +20,7 @@ let currentUser = null
 
 export default class App extends React.Component {
 
-  componentWillMount() {
+  async componentWillMount() {
     firebase.initializeApp({
       apiKey: config.API_KEY,
       authDomain: config.AUTH_DOMAIN,
@@ -37,6 +37,7 @@ export default class App extends React.Component {
         offline.save("@TB:currentUser", user)
       }
     })
+
   }
 
 

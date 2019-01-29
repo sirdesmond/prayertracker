@@ -2,19 +2,25 @@ import firebase from 'firebase';
 import * as types from './types';
 import Toast from 'react-native-simple-toast';
 
+
 export const emailChanged = (text) => ({
-    type: types.EMAIL_CHANGED,
-    payload: text
+  type: types.EMAIL_CHANGED,
+  payload: text
 });
 
 export const passwordChanged = (text) => ({
-    type: types.PASSWORD_CHANGED,
-    payload: text
+  type: types.PASSWORD_CHANGED,
+  payload: text
 });
 
 export const usernameChanged = (text) => ({
-    type: types.USERNAME_CHANGED,
-    payload: text
+  type: types.USERNAME_CHANGED,
+  payload: text
+});
+
+export const groupChanged = (text) => ({
+  type: types.GROUP_CHANGED,
+  payload: text
 });
 
 export const loginUser = ({ email, password, navigate }) => {
@@ -26,14 +32,14 @@ export const loginUser = ({ email, password, navigate }) => {
         //something is wrong here..
         console.log(`error here...${err}`);
         _loginUserFail(dispatch);
-    });
+      });
   };
 };
 
 const _loginUserSuccess = async (dispatch, navigate, user) => {
   await dispatch({
     type: types.LOGIN_USER_SUCCESS,
-    payload: {user,navigate}
+    payload: { user, navigate }
   });
   navigate('home');
 };
@@ -42,13 +48,16 @@ const _loginUserFail = (dispatch) => {
   dispatch({ type: types.LOGIN_USER_FAIL });
 };
 
-export const signupUser = ({ email, password, username, navigate }) => {
+export const signupUser = ({ email, password, username, group, navigate }) => {
   return (dispatch) => {
     dispatch({ type: types.SIGNUP_USER });
     firebase.auth().createUserWithEmailAndPassword(email, password)
-      .then( ({user}) => {
-        console.log("user: ", user)
+      .then(({user}) => {
         user.updateProfile({ displayName: username })
+
+        firebase.database().ref(`/users/${user.uid}/`)
+          .set({ username: username,group: group, role: "user" })
+          .then(() => { });
         _signupUserSuccess(dispatch, user, navigate)
       })
       .catch(() => _signupUserFail(dispatch));
@@ -56,9 +65,9 @@ export const signupUser = ({ email, password, username, navigate }) => {
 };
 
 const _signupUserSuccess = (dispatch, user, navigate) => {
-    dispatch({ type: types.SIGNUP_USER_SUCCESS, payload: user });
-    Toast.show('Registration completed successfully!', Toast.SHORT);
-    navigate('signin');
+  dispatch({ type: types.SIGNUP_USER_SUCCESS, payload: user });
+  Toast.show('Registration completed successfully!', Toast.SHORT);
+  navigate('signin');
 };
 
 const _signupUserFail = (dispatch) => {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Slides } from '../components/';
 
 const SLIDE_DATA = [
-  { text: 'Blazers pray without ceasing', color: '#03A9F4' },
+  { text: 'Trail Blazers pray without ceasing', color: '#03A9F4' },
   { text: 'Praying with your spirit is the key to hightened spiritual sensitivity.',
    color: '#01addf' },
   { text: 'TrailBlazer....You ready to start praying?', color: '#03A9F4' }

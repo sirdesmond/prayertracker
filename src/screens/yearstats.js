@@ -37,7 +37,7 @@ class YearStatsScreen extends Component {
   createDataSource({ userData }) {
     if(userData){
       this.setState({ dataSource: _.filter(Object.keys(userData), (key) => {
-          return key !== "username" && key !== "role"
+          return key !== "username" && key !== "role" && key !== "group"
         }) })
     }
   }

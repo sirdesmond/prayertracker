@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Input, Button } from 'react-native-elements';
 import { connect } from 'react-redux';
-import { emailChanged, passwordChanged, usernameChanged, signupUser } from '../actions';
+import { Form, Picker, Icon } from 'native-base';
+import { emailChanged, passwordChanged, usernameChanged, groupChanged, signupUser } from '../actions';
 import { Spinner } from '../components';
 
 
@@ -11,10 +12,14 @@ class SignUpScreen extends Component {
     tabBarVisible: false,
   })
 
+  state = {
+    groupSelected: undefined
+  }
+
   onSignUpPress = () => {
-    const { email, password, username } = this.props;
+    const { email, password, username, group } = this.props;
     const { navigate } = this.props.navigation;
-    this.props.signupUser({ email, password, username, navigate });
+    this.props.signupUser({ email, password, username, group, navigate });
   }
 
   onEmailChange = (text) => {
@@ -29,6 +34,10 @@ class SignUpScreen extends Component {
     this.props.usernameChanged(text);
   }
 
+  onGroupChange = (text) => {
+    this.setState({ groupSelected: text })
+    this.props.groupChanged(text);
+  }
 
   renderButton() {
     if (this.props.loading) {
@@ -71,6 +80,33 @@ class SignUpScreen extends Component {
           value={this.props.username}
         />
 
+        <View style={styles.groupsContainer}>
+          <Form>
+            <Picker
+              mode="dropdown"
+              iosIcon={<Icon name="arrow-down" />}
+              placeholder="Select your Group"
+              placeholderStyle={{ color: "#bfc6ea" }}
+              placeholderIconColor="#007aff"
+              style={{ width: undefined }}
+              selectedValue={this.state.groupSelected}
+              onValueChange={this.onGroupChange}
+            >
+              <Picker.Item 
+                label="Select your Group"
+                value="null"
+                style={styles.groupPlaceHolder}
+              >
+              </Picker.Item> 
+              <Picker.Item label="Judah" value="Judah" />
+              <Picker.Item label="Dan" value="Dan" />
+              <Picker.Item label="Ephraim" value="Ephraim" />
+              <Picker.Item label="Levi" value="Levi" />
+            </Picker>
+          </Form>
+
+        </View>
+
         {this.renderButton()}
       </View>
 
@@ -90,13 +126,21 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: '#01addf',
     height: 45
-    }
+  },
+  groupsContainer: {
+    paddingTop: 10,
+  },
+  groupPlaceHolder: {
+    opacity: .1,
+    color: '#bfc6ea',
+    backgroundColor: '#bfc6ea'
+  }
 });
 
 const mapStateToProps = ({ auth }) => {
-  const { email, password, username, loading, error, user } = auth;
-  return { email, password, username, loading, error, user };
+  const { email, password, username, group, loading, error, user } = auth;
+  return { email, password, username, group, loading, error, user };
 };
 
 export default connect(mapStateToProps,
-  { emailChanged, passwordChanged, usernameChanged, signupUser })(SignUpScreen);
+  { emailChanged, passwordChanged, usernameChanged, groupChanged, signupUser })(SignUpScreen);

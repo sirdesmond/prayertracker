@@ -3,8 +3,8 @@ import * as types from './types';
 import _ from 'lodash';
 
 export const updateUserData = (userData) => {
-    const { currentUser } =  firebase.auth();
-    userData = { ...userData, role: (userData.role === null || userData.role === undefined ) ? 'user': userData.role, username: currentUser.displayName }
+    const { currentUser } = firebase.auth();
+    userData = { ...userData, role: (userData.role === null || userData.role === undefined) ? 'user' : userData.role, username: currentUser.displayName }
 
     return (dispatch) => {
         firebase.database().ref(`/users/${currentUser.uid}/`)
@@ -26,15 +26,31 @@ export const fetchUserData = () => {
 export const fetchAllUserData = () => {
     let displayNames = [];
     let usersData = {};
+    const { currentUser } = firebase.auth();
 
     return (dispatch) => {
-        firebase.database().ref(`/users/`)
+
+        firebase.database().ref(`/users/${currentUser.uid}/`)
             .on('value', snapshot => {
-                _.each(snapshot.val(), (user) => {
-                    displayNames.push(user.username)
-                    usersData[user.username] = user
-                })
-                dispatch({ type: types.ALL_USERS_DATA_FETCH_SUCCESS, payload: { displayNames, usersData } });
+                currentUserSnapshot = snapshot.val()
+                firebase.database().ref(`/users/`)
+                    .on('value', snapshot => {
+                        _.each(snapshot.val(), (user) => {
+                            if (currentUserSnapshot.username == "pastor") {
+                                displayNames.push(user.username)
+                                usersData[user.username] = user
+                            }
+                            else {
+                                if (user.group == currentUserSnapshot.group) {
+                                    displayNames.push(user.username)
+                                    usersData[user.username] = user
+                                }
+                            }
+
+                        })
+                        dispatch({ type: types.ALL_USERS_DATA_FETCH_SUCCESS, payload: { displayNames, usersData } });
+                    })
+
             })
     }
 }

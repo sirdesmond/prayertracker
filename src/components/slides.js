@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, ScrollView, View, Text, Dimensions } from 'react-native';
-import { Button } from 'react-native-elements';
+import { StyleSheet, ScrollView, View, Text, Dimensions, TouchableOpacity } from 'react-native';
 
 const SCREEN_WIDTH = Dimensions.get('window').width;
 
@@ -9,16 +8,17 @@ class Slides extends Component {
   renderLastSlide(index) {
     if (index === this.props.data.length - 1) {
       return (
-        <Button
-          title='CLICK ME'
-          buttonStyle={styles.buttonStyle}
+        <TouchableOpacity
           onPress={this.props.onComplete}
-          raised
-        />
+          style={styles.button}
+        >
+          <Text style={styles.yesText}>YES</Text>
+        </TouchableOpacity>
+
       );
-    }else {
+    } else {
       return (
-        <Text style={{fontSize: 12, marginTop: 20}}> SLIDE LEFT </Text>
+        <Text style={{ fontSize: 14, marginTop: 20 }}> {`<<SLIDE LEFT<<`} </Text>
       )
     }
   }
@@ -62,9 +62,23 @@ const styles = StyleSheet.create({
     color: 'white',
     textAlign: 'center'
   },
-  buttonStyle: {
-    backgroundColor: '#0288D1'
-  }
+  button: {
+    marginVertical: 20,
+    padding: 20,
+    borderRadius: 30,
+    alignItems: "center",
+    justifyContent: "center",
+    shadowOpacity: 1,
+    shadowOffset: { x: 0, y: 0 },
+    shadowRadius: 5,
+    elevation: 4,
+    backgroundColor: "white",
+    shadowColor: "#03A9F4",
+  },
+  yesText: {
+    fontSize: 16,
+    color: "#03A9F4",
+},
 });
 
 export { Slides };
