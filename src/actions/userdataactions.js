@@ -1,4 +1,4 @@
-import firebase from 'firebase';
+import firebase from 'react-native-firebase';
 import * as types from './types';
 import _ from 'lodash';
 

@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { FlatList, View, StyleSheet } from 'react-native';
 import { List, Button } from 'react-native-elements';
 import { connect } from 'react-redux';
-import firebase from '@firebase/app'
-import '@firebase/auth'
+import firebase from 'react-native-firebase'
 import _ from 'lodash';
 import ListItem from '../components/listitem';
 

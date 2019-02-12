@@ -5,7 +5,7 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
-import firebase from 'firebase'
+import firebase from 'react-native-firebase'
 import offline from 'react-native-simple-store';
 
 

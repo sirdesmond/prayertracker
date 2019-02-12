@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "586125300263",
+    "firebase_url": "https://cpim-trailblazers.firebaseio.com",
+    "project_id": "cpim-trailblazers",
+    "storage_bucket": "cpim-trailblazers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586125300263:android:0170e1ba9b4d8d97",
+        "android_client_info": {
+          "package_name": "com.prayertracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586125300263-bufgdp076h37rt984n8hhjlq340vq0g6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd1gJGCYJYWUnfuXZKyL8nFf7VIp6nHrU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,4 +1,0 @@
-#Wed Jan 23 21:27:32 CST 2019
-base.0=D\:\\frontend\\rxtnative\\prayertracker\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
-path.0=classes.dex
-renamed.0=classes.dex

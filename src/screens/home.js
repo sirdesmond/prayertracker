@@ -3,8 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity, BackHandler, Keyboard } from 
 import Icon from 'react-native-vector-icons/Ionicons';
 import _ from 'lodash';
 import { connect } from 'react-redux';
-import firebase from '@firebase/app'
-import '@firebase/auth'
+import firebase from 'react-native-firebase';
 import BackgroundTimer from 'react-native-background-timer';
 import { updateUserData, fetchUserData } from '../actions';
 
