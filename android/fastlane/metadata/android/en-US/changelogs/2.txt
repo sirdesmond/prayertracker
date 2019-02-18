@@ -1,0 +1,1 @@
+Details page now shows the charts as expected

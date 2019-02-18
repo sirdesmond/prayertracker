@@ -1,0 +1,2 @@
+Prayertracker is an app meant for small groups in churches to encourage their members to pray. It provides a daily, weekly, monthly and annual report of the users prayer life.
+Users sign up under groups. Admins of groups can view the records of all team members.
