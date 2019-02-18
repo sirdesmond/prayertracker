@@ -15,3 +15,5 @@ android/app/build
 android/build
 android/.gradle
 android/.idea
+*.keystore
+android/app/api-4681787187360595915-719541-1d8a01fb9eb5.json

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { ListView, StyleSheet, View } from 'react-native';
+import { ListView, StyleSheet, View, Text } from 'react-native';
 import { Button } from 'react-native-elements';
 import { connect } from 'react-redux';
 import _ from 'lodash';
-import { Pie } from 'react-native-pathjs-charts'
+import { VictoryPie, VictoryLabel } from "victory-native";
 import ListItem from '../components/listitem';
 
 class DetailStatsScreen extends Component {
@@ -29,7 +29,7 @@ class DetailStatsScreen extends Component {
   createDataSource({ monthData }) {
     let newData = []
    _.each(Object.keys(monthData),(week) => {
-      newData.push({ "name" : `${week} : ${parseFloat(monthData[week]/3600).toFixed(2)} hr(s)`,
+      newData.push({ "name" : `${week.replace(" ","").substring(4,6)} : ${parseFloat(monthData[week]/3600).toFixed(2)}`,
       "time": Number.parseFloat(monthData[week])/3600})
    })
 
@@ -38,57 +38,20 @@ class DetailStatsScreen extends Component {
 
   render() {
 
-    let options = {
-      margin: {
-        top: 20,
-        left: 20,
-        right: 20,
-        bottom: 20
-      },
-      width: 350,
-      height: 350,
-      color: '#2980B9',
-      r: 50,
-      R: 150,
-      legendPosition: 'topLeft',
-      animate: {
-        type: 'oneByOne',
-        duration: 200,
-        fillTransition: 3
-      },
-      label: {
-        fontFamily: 'Arial',
-        fontSize: 12,
-        fontWeight: true,
-        color: '#ECF0F1'
-      }
-    }
     return (
      <View style={styles.container}>
-        <Pie data={this.state.data}
-          options={options}
-          accessorKey="time"
-          margin={{top: 20, left: 20, right: 20, bottom: 20}}
-          color="#2980B9"
-          pallete={
-            [
-              {'r':25,'g':99,'b':201},
-              {'r':24,'g':175,'b':35},
-              {'r':190,'g':31,'b':69},
-              {'r':100,'g':36,'b':199},
-              {'r':214,'g':207,'b':32},
-              {'r':198,'g':84,'b':45}
-            ]
-          }
-          r={50}
-          R={150}
-          legendPosition="bottomLeft"
-          label={{
-            fontFamily: 'Arial',
-            fontSize: 8,
-            fontWeight: true,
-            color: '#ECF0F1'
-          }}
+        <Text style={{paddingBottom: 10, fontSize: 30 }}>
+          WEEKS( hrs )
+        </Text>
+
+        <VictoryPie 
+          data={this.state.data}
+          labels={(d) => d.name}
+          colorScale="cool"
+          // labelComponent={<VictoryLabel angle={45}/>}
+          style={{ labels: { fill: "black", fontSize: 20, fontWeight : "bold", pad: 5 }}}
+          x="name"
+          y="time"
           />
       </View>
     );
